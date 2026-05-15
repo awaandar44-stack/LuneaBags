@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunéa Bags - Company Profile</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body{
+        background: linear-gradient(to bottom right, #fff7f8, #fdf0f5);
+        color: #333;
+        padding: 20px;
+    }
+
+    /* HEADER */
+    header{
+        background: linear-gradient(135deg, #ffb6c1, #ffc8dd);
+        padding: 25px;
+        text-align: center;
+        border-radius: 20px 20px 0 0;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .logo{
+        font-size: 38px;
+        font-weight: 700;
+        color: white;
+    }
+
+    header h1{
+        color: white;
+        font-size: 20px;
+        margin-top: 8px;
+    }
+
+    /* MENU */
+    .menu-container{
+        background: white;
+        padding: 15px;
+        border-left: 2px solid #ffd6e0;
+        border-right: 2px solid #ffd6e0;
+    }
+
+    .sidebar ul{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+
+    .sidebar ul li a{
+        text-decoration: none;
+        color: #ff4f81;
+        font-weight: 600;
+        transition: 0.3s;
+        padding: 10px 18px;
+        border-radius: 30px;
+    }
+
+    .sidebar ul li a:hover{
+        background: #ff4f81;
+        color: white;
+    }
+
+    /* SLOGAN */
+    .slogan{
+        background: #ffe5ec;
+        padding: 14px;
+        font-weight: 600;
+        color: #ff4f81;
+        border-left: 2px solid #ffd6e0;
+        border-right: 2px solid #ffd6e0;
+    }
+
+    /* MAIN */
+    main{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 20px;
+        background: white;
+        padding: 20px;
+        border-left: 2px solid #ffd6e0;
+        border-right: 2px solid #ffd6e0;
+    }
+
+    /* CONTENT */
+    .content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card{
+        display: flex;
+        gap: 20px;
+        background: #fff;
+        padding: 15px;
+        border-radius: 18px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: 0.3s;
+    }
+
+    .card:hover{
+        transform: translateY(-5px);
+    }
+
+    .card img{
+        min-width: 220px;
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .text h2{
+        color: #ff4f81;
+        margin-bottom: 10px;
+    }
+
+    .text p{
+        line-height: 1.7;
+    }
+
+    /* RIGHT SIDEBAR */
+    .right-sidebar{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .iklan,
+    .menu-bawah{
+        background: #fff0f3;
+        padding: 18px;
+        border-radius: 18px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        text-align:center;
+    }
+
+    .iklan h2,
+    .menu-bawah h3{
+        color: #ff4f81;
+        margin-bottom: 15px;
+    }
+
+    .iklan img{
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 10px;
+    }
+
+    .menu-bawah ul{
+        list-style: none;
+    }
+
+    .menu-bawah ul li{
+        padding: 10px;
+        border-bottom: 1px solid #ffc8dd;
+    }
+
+    /* FOOTER */
+    footer{
+        background: linear-gradient(135deg, #ffb6c1, #ffc8dd);
+        color: white;
+        text-align: center;
+        padding: 18px;
+        border-radius: 0 0 20px 20px;
+        font-weight: 600;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    /* RESPONSIVE */
+    @media(max-width: 900px){
+        main{
+            grid-template-columns: 1fr;
+        }
+
+        .card{
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+
+        .card img{
+            width: 100%;
+            height: 250px;
+        }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">Lunéa Bags</div>
+  </header>
+
+  <!-- MENU -->
+  <div class="menu-container">
+    <nav class="sidebar">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="produk.html">PRODUK</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- SLOGAN -->
+  <section class="slogan">
+    <marquee behavior="scroll" direction="left">
+      ✨ Stylish Tote Bag For Your Daily Style ✨
+    </marquee>
+  </section>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- CONTENT -->
+    <section class="content">
+      
+      <div class="card" id="home">
+        <img src="model 1.jpg" alt="produk1">
+        <div class="text">
+          <h2>Lunéa Latte Bag</h2>
+          <p>
+            Tote bag berbahan canvas premium dengan perpaduan warna soft cream yang memberikan kesan 
+            warm dan aesthetic. Desainnya simple namun tetap elegan, cocok digunakan untuk aktivitas sehari-hari 
+            seperti kuliah, bekerja, hingga hangout karena nyaman dipakai dan mudah dipadukan dengan berbagai outfit.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" id="produk">
+        <img src="model 2.jpg" alt="produk2">
+        <div class="text">
+          <h2>Lunéa Soul Bag</h2>
+          <p>
+            Canvas tote bag dengan desain minimalis ala Korean style yang dilengkapi kantong depan multifungsi 
+            untuk menyimpan barang kecil agar lebih praktis. Memiliki kapasitas yang cukup luas serta bahan
+             yang nyaman digunakan, cocok untuk daily look yang modern, simple, dan effortless.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="model 3.jpg" alt="produk3">
+        <div class="text">
+          <h2>Lunéa Femme Bag</h2>
+          <p>
+          Tote bag berdesain clean feminine style dengan ukuran yang lebih luas sehingga dapat membawa 
+          banyak barang untuk aktivitas harian. Menggunakan bahan canvas ringan yang nyaman dipakai serta 
+          mudah dipadukan dengan outfit casual maupun feminine agar tetap terlihat stylish dan elegant.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="right-sidebar">
+      <div class="iklan">
+        <h2>Iklan Produk</h2>
+        <img src="promo.png" alt="iklan">
+        <p>
+        👑 Lunéa Femme Bag <br>
+
+        <s>Rp68.000</s> → <b>Rp58.000</b>
+        </p>
+      </div>
+
+      <div class="menu-bawah">
+        <h3>Lunéa Updates</h3>
+        <ul>
+          <li><a href="promo.html">Special Promo</a></li>
+          <li><a href="coming soon.html">Coming soon</a></li>
+          <li><a href="best seller.html">Best Seller</a></li>
+        </ul>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    Copyright ©NASYWA ANDARA MAHARANI - 25.230.0122
+  </footer>
+
+</body>
+</html>
+

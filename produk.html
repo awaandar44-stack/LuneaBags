@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Collection - Lunéa Bags</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body{
+      background: linear-gradient(to bottom right, #fff7f8, #fdf0f5);
+      padding: 30px;
+    }
+
+    .container{
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1{
+      text-align: center;
+      color: #ff4f81;
+      margin-bottom: 40px;
+      font-size: 40px;
+    }
+
+    .product-grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+      gap: 25px;
+    }
+
+    .card{
+      background: white;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover{
+      transform: translateY(-8px);
+    }
+
+    .card img{
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+
+    .card-content{
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-content h2{
+      color: #ff4f81;
+      margin-bottom: 10px;
+    }
+
+    .card-content p{
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .price{
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .back{
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      background: #ff4f81;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+
+    .back:hover{
+      opacity: 0.8;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>✨ Lunéa Bags Collection ✨</h1>
+
+    <div class="product-grid">
+
+      <div class="card">
+        <img src="model 1.jpg" alt="Latte Bag">
+
+        <div class="card-content">
+          <h2>☕ Lunéa Latte Bag</h2>
+
+          <p>
+            Tote bag aesthetic dengan nuansa coffee shop dan warna warm beige yang elegan.
+          </p>
+
+          <div class="price">Rp39.000</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="model 2.jpg" alt="Soul Bag">
+
+        <div class="card-content">
+          <h2>🤍 Lunéa Soul Bag</h2>
+
+          <p>
+            Desain minimalis dengan typography self-love yang soft dan feminine.
+          </p>
+
+          <div class="price">Rp55.000</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="model 3.jpg" alt="Femme Bag">
+
+        <div class="card-content">
+          <h2>👑 Lunéa Femme Bag</h2>
+
+          <p>
+            Koleksi classy dengan sentuhan women empowerment modern aesthetic.
+          </p>
+
+          <div class="price">Rp68.000</div>
+        </div>
+      </div>
+
+    </div>
+
+    <a href="index.html" class="back">← Back to Home</a>
+
+  </div>
+
+</body>
+</html>
